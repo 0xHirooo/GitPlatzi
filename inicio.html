@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+<body>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+ <fieldset>
+
+ <div class="survey-form">
+  <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required/></label>
+  </div>
+
+  <div class="survey-form">
+  <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required/></label>
+  </div>
+
+ <div class="survey-form">
+  <label id="number-label">Age (optional)<input type="number" id="number" min="3" max="100" placeholder="Age"/></label>
+  </div>
+
+  <div class="survey-form">
+   <label>Which option best describes your current role?<select id="dropdown"> 
+  <option value="select">(select one)</option>
+  <option value="Student">Student</option>
+  <option value="Full">Full-time job</option>
+  <option value="Other">Other</option>
+  </select>
+  </label>
+  </div>
+
+  <div class="survey-form">
+  <label>Would you recommend freeCodeCamp to a friend?</label>
+  <label><input name="recomendation" type="radio" value="yes" />Yes</label>
+
+  
+  <label><input name="recomendation" type="radio" value="no" >No</label>
+  </fieldset>
+
+<div class="survey-form">
+<fieldset>
+  <label>What would you like to see improved? (Check all that apply)</label>
+  </div>
+  <label><input type="checkbox" value="1"/>Front-end Project</label>
+
+  <label><input type="checkbox" value="2"/>Back-end Project</label>
+
+  <label><input type="checkbox" value="3"/>Other</label>
+</div>
+
+<div class="survey-form">
+  <label>Any comment or suggestion?<textarea type="textarea" placeholder="Enter yout comment here..."></textarea></label>
+</div>
+</fieldset>
+
+<div class="survey-form">
+<fieldset>
+<button type="submit" id="submit" value="Submit">Submit</button>
+</fieldset>
+</div>
+</form>
+</body>
+</html>
